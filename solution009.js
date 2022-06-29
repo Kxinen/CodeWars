@@ -17,6 +17,7 @@
 //return number
 
 
+
 function squareDigits(num){
   let str = num.toString()
   let splitStrArr = str.split('')
