@@ -15,15 +15,17 @@
 //join back together
 
 
-
-function find_average(num) {
-    if(num.length === 0) {
-        return 0
+function remainder(n, m){
+    if(n == 0 || m == 0) {
+      return NaN
     }
-    else {
-    let ogLength = num.length
-   return num.reduce(function(currentvalue,previousVal) {
-            return currentvalue += previousVal
-    },0) / ogLength
-    }
-}
+    else{ 
+      if(n > m) {
+        return n % m
+      }
+      else if(m > n) {
+        return m % n
+      }
+      }
+    
+  }
